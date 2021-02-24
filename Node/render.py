@@ -11,5 +11,6 @@ master_config = json.load(config_file)
 blender_path = master_config["exe"]
 jobs_path = master_config["jobs"]
 
-command = blender_path + " -b " + "B:/Blender/playground01.blend" + " -a " + "-- --cycles-device " + render_engine
+command = blender_path + " -b " + "B:/Blender/playground01.blend" + \
+    " -a " + "-- --cycles-device " + render_engine
 call(command, shell=True)
